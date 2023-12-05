@@ -16,12 +16,12 @@ TEST(SoucetTest, haha) {
 }
 
 TEST(NormTest, TestVectorNorm) {
-    auto ev = AbstractVector<EVector>::norm(EVector(3, 4));
+    auto ev = AbstractEuclidVector<EVector>::norm(EVector(3, 4));
     EXPECT_EQ(ev, 5);
 }
 
 TEST(testAngle, TestAnglu) {
-    auto ev = AbstractVector<EVector>::angle(EVector(3, 4), EVector(3, 4));
+    auto ev = AbstractEuclidVector<EVector>::angle(EVector(3, 4), EVector(3, 4));
     EXPECT_EQ(ev, 0);
 }
 

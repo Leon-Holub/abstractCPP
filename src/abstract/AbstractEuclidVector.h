@@ -2,15 +2,15 @@
 // Created by leonh on 28.11.2023.
 //
 
-#ifndef INC_28_11_2023_ABSTRACTVECTOR_H
-#define INC_28_11_2023_ABSTRACTVECTOR_H
+#ifndef INC_28_11_2023_ABSTRACTEUCLIDVECTOR_H
+#define INC_28_11_2023_ABSTRACTEUCLIDVECTOR_H
 
-#include "../interface/Addable.h"
-#include "../interface/Scalarable.h"
+#include "../interface/VectorAddable.h"
+#include "../interface/VectorScalarable.h"
 #include <cmath>
 
 template<class T>
-class AbstractVector : public Addable<T>, Scalarable<T> {
+class AbstractEuclidVector : public VectorAddable<T>, VectorScalarable<T> {
 public:
     static float norm(const T &other) {
         return sqrt(other.scalar(other));
@@ -21,4 +21,4 @@ public:
     }
 };
 
-#endif //INC_28_11_2023_ABSTRACTVECTOR_H
+#endif //INC_28_11_2023_ABSTRACTEUCLIDVECTOR_H

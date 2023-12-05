@@ -7,9 +7,9 @@
 
 
 #include <iostream>
-#include <AbstractVector.h>
+#include <AbstractEuclidVector.h>
 
-class EVector : public AbstractVector<EVector> {
+class EVector : public AbstractEuclidVector<EVector> {
 
 public:
     float _x, _y;
@@ -20,7 +20,7 @@ public:
         _y = y;
     }
 
-    float scalar(const EVector &other) const {
+    float scalar(const EVector &other) const override {
         return _x * other._x + _y * other._y;
     }
 

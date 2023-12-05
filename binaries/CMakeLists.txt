@@ -1,1 +1,1 @@
-target_link_libraries(28_11_2023 Vector)
+target_link_libraries(28_11_2023 Vector Point)
