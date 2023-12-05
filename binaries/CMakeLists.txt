@@ -1,0 +1,1 @@
+target_link_libraries(28_11_2023 Vector)
